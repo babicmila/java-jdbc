@@ -1,0 +1,35 @@
+
+
+insert into fabrika(fabrikaid,naziv_fabrike)
+values(1,'Ice');
+
+insert into proizvodnja(proizvodnjaid,fabrikaid, naziv_proizvodnje)
+values (1, 1, 'proizvodnja sladoleda');
+
+insert into uloga(ulogaid, naziv)
+values(1,'sef trgovine');
+
+insert into uloga(ulogaid, naziv)
+values(2,'sef proizvodnje');
+
+insert into dobavljac(dobavljacid, ime_dobavljaca)
+values(1,'Andrija');
+
+insert into vrsta_sladoleda(sladoledid, proizvodnjaid, brendirano_ime, cena)
+values(1,1,'snesko', 60);
+
+insert into skladiste(skladisteid, namena)
+values(1,'za sirovine');
+
+insert into zaposleni(zaposleniid,ulogaid,skladisteid,proizvodnjaid,ime_zaposlenog,prezime_zaposlenog, jmbg)
+values(1,1,1,1,'Mila','Babic,'1234567891111');
+
+------------------------
+
+insert into tipizvestaja(tipid,opistipa)
+values(1,'izvestaj o zalihama sirovina');
+
+
+insert into izvestaj(izvestajid, skladisteid, tipid, datum, imesirovine, kolicinasirovine)
+values(1, 1, 1, '2018-08-26', 'mleko', 1000);
+
